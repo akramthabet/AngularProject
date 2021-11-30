@@ -12,6 +12,7 @@ import {StockComponent} from "./produit/stock/stock.component";
 import {ClientComponent} from "./client/client/client.component";
 import {LoginComponent} from "./client/login/login.component";
 import {ReactiveFormsModule} from "@angular/forms";
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +23,10 @@ import {ReactiveFormsModule} from "@angular/forms";
     ProduitComponent,
     RayonComponent,
     StockComponent,
+
+    LoginComponent,
     MenuComponent,
-    LoginComponent
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -18,13 +18,14 @@ import {LoginComponent} from "./client/login/login.component";
 const ROUTES: Routes = [
 
   {path: 'produit',component:ProduitComponent},
+  {path:'login',component:LoginComponent},
   {path:'menu',component:MenuComponent},
   {path: 'client',component:ClientComponent},
   {path: 'facture', component: FactureComponent},
   {path: 'fournisseur',component:FournisseurComponent},
   {path: 'rayon',component:RayonComponent},
   {path:'stock',component:StockComponent},
-  {path:'login',component:LoginComponent},
+
   {path:'',component:AppComponent},
 
 ];

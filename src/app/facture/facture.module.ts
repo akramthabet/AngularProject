@@ -1,17 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FactureComponent } from './facture/facture.component';
+import { FractureComponent } from './facture/facture.component';
 import { DetailFactureComponent } from './detail-facture/detail-facture.component';
+import { AddDetailFactureComponent } from './add-detail-facture/add-detail-facture.component';
+import {FormsModule} from "@angular/forms";
 
 
 
 @NgModule({
   declarations: [
-    FactureComponent,
-    DetailFactureComponent
+    FractureComponent,
+    DetailFactureComponent,
+    AddDetailFactureComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
 })
 export class FactureModule { }

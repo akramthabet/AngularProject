@@ -1,1 +1,20 @@
-<p>facture works!</p>
+<table class="table">
+  <tr>
+    <th>Client</th>
+    <th>Montant Remise</th>
+    <th>Montant de facture</th>
+    <th>Etat</th>
+    <th>Date</th>
+  </tr>
+  <tbody *ngFor="let facture of liste; let i= index">
+    <tr>
+      <td>{{facture.client.nom}} {{facture.client.prenom}}</td>
+      <td>{{facture.montantRemise}}</td>
+      <td>{{facture.montantFacture}}</td>
+      <td>{{facture.active}}</td>
+      <td>{{facture.dateFacture}}</td>
+      <td><a routerLink="/facture-detail/{{facture.idFacture}}" >Voir detail</a></td>
+      <td><button (click)="delete(facture.idFacture)" class="btn btn-danger">Supprimer</button></td>
+    </tr>
+  </tbody>
+</table>

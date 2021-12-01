@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FactureService} from "../../service/facture.service";
+import {Facture} from "../../models/facture";
 
 @Component({
   selector: 'app-facture',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FactureComponent implements OnInit {
 
-  constructor() { }
+  liste: Facture[] =[];
+  constructor(private factureService: FactureService) { }
 
   ngOnInit(): void {
+    this.factureService.getFactures().subscribe(
+      (res:Facture[])  => {
+        this.liste = res;
+        console.log(res);
+      }
+    );
+  }
+  delete(id: number){
+    this.factureService.deleteFacture(id).subscribe(
+      ()=> this.liste = this.liste.filter(factureFilter => factureFilter.idFacture != id)
+    )
   }
 
 }

@@ -10,15 +10,16 @@ import {RayonComponent} from "./produit/rayon/rayon.component";
 import {AppComponent} from "./app.component";
 import {MenuComponent} from "./menu/menu.component";
 import {LoginComponent} from "./client/login/login.component";
+import {MainProductComponent} from "./main-product/main-product.component";
 
 
 
 
 
 const ROUTES: Routes = [
-
-  {path: 'produit',component:ProduitComponent},
   {path:'login',component:LoginComponent},
+
+  {path: 'produit',component:MainProductComponent},
   {path:'menu',component:MenuComponent},
   {path: 'client',component:ClientComponent},
   {path: 'facture', component: FactureComponent},
@@ -27,6 +28,7 @@ const ROUTES: Routes = [
   {path:'stock',component:StockComponent},
 
   {path:'',component:AppComponent},
+
 
 ];
 @NgModule({

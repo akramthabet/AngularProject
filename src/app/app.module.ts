@@ -13,10 +13,14 @@ import {ClientComponent} from "./client/client/client.component";
 import {LoginComponent} from "./client/login/login.component";
 import {ReactiveFormsModule} from "@angular/forms";
 import { NavbarComponent } from './navbar/navbar.component';
+import { HeaderComponent } from './header/header.component';
+import { FormProductComponent } from './form-product/form-product.component';
+import { MainProductComponent } from './main-product/main-product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
     ClientComponent,
     FactureComponent,
     FournisseurComponent,
@@ -26,7 +30,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 
     LoginComponent,
     MenuComponent,
-    NavbarComponent
+    HeaderComponent,
+    FormProductComponent,
+    MainProductComponent
   ],
   imports: [
     BrowserModule,

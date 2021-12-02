@@ -1,0 +1,15 @@
+{
+  "fournisseur": [
+    {
+      "idFournisseur": "1",
+      "code": "TKVG",
+      "libelle": "fournisseur libelle"
+
+    },
+    {
+      "idFournisseur": "2",
+      "code": "TKGHTVG",
+      "libelle": "fournisseur libelle2"
+    }
+  ]
+}

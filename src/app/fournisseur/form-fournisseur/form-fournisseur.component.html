@@ -1,0 +1,16 @@
+
+<form [formGroup]="form" (ngSubmit)="addFournisseur(form)">
+  <div class="form-group">
+    <label>Code</label>
+    <input type="text" class="form-control" formControlName="code">
+  </div>
+
+  <div class="form-group">
+    <label>Libelle</label>
+    <input type="text" class="form-control" formControlName="libelle">
+  </div>
+
+
+  <input class="btn btn-primary" type="submit" value="Ajouter fournisseur">
+  <input class="btn btn-secondary" type="reset" value="Reset">
+</form>

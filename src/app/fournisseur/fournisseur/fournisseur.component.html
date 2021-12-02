@@ -1,1 +1,14 @@
-<p>fournisseur works!</p>
+<div class="card" style="width: 18rem;">
+  <img src="assets/provider.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Fournisseur</h5>
+    <p class="card-text">{{fournisseur.libelle}}</p>
+    <p>code: {{fournisseur.code}} </p>
+
+    &nbsp;
+    <button class="btn btn-outline-danger" (click)="deleteNotif()">delete</button>
+    <button class="btn btn-outline-primary" (click)="updateNotif()">update</button>
+
+
+  </div>
+</div>
